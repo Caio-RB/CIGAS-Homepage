@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+@media screen and (min-width:820px){
+    *{
+      margin: 0;
+      padding: 0;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    a{
+      text-decoration: none;
+      color: aliceblue;
+    }
+    
+    ul{
+      list-style: none;
+      display: flex;
+    }
+    /* navbar customization */
+    .space__items{
+      margin: 0 5px;
+    }
+    #nav__logo{
+      font-size: 2em;
+      font-family: 'Shrikhand', sans-serif !important;
+      font-weight: 300;
+      margin:0 40px;
+    }
+   
+    nav{
+      /* background-color: rgb(5, 22, 116); */
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color:#B09A6B;
+      align-items: center;
+      position: fixed;
+      font-family: "Poppins";
+      z-index: 50;
+    }
+
+    .nav__link--underline{
+      background: linear-gradient(currentColor 0 0) 
+      bottom left/
+      var(--underline-width, 0%) 0.1em
+      no-repeat;
+      color:rgb(176, 154, 107);
+      display: inline-block;
+      padding: 0 .5em 0.2em;
+      text-decoration: none;
+      transition: background-size 0.5s;
+    }
+    .nav__link--underline:hover{
+      --underline-width: 90%;
+    }
+
+    #nav__link--signup{
+      color:rgb(176, 154, 107);;
+      border: 2px solid rgb(176, 154, 107);
+      padding:0 10px;
+      border-radius:6px;
+    }
+
+    #nav__link--signup:hover{
+      color:white;
+      border: 2px solid rgb(176, 154, 107);
+      background-color: rgb(176, 154, 107);
+      transition: 0.5s;
+    }
+
+    /* footer cutomization */
+    footer{
+      width: 100%;
+      height: 12vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      position: static;
+      font-family: "Poppins";
+      z-index: 50;
+      bottom: 0;
+      background-color: #010d18;
+      color: aliceblue;
+    }
+    /* the "slide structure" class is responsible for the parallax effect and page sectors*/
+    .slide__structure{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height:100vh !important;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .slide__container{
+      width: 100%;
+      height: 30vh;
+      background:linear-gradient(rgb(214, 187, 129),  rgb(176, 154, 107));
+    }
+    
+    .slide__text--block{
+      max-width: 700px;
+      right: 0;
+      position: absolute;
+      margin:0 20px;
+    }
+
+    .slide__title{
+      color:white;
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      font-family: "Poppins";
+      font-weight: 900;
+   }
+
+    .slide__paragraph{
+      color:white;
+      text-align: justify;
+    }
+    /* background of page sectors */
+    .slide__background--color--primary{
+      background-color: #02203C;   
+    }
+    .slide__background--color--secundary{
+      background-color: #ebebeb;
+    }
+    .slide__filter{
+      filter: brightness(65%);    
+    }
+    /* first section, slide 01/home */
+    #anna__image{
+      min-width: 30.5%;
+      z-index: 4;
+      bottom: 0;
+      position: absolute;
+    }
+
+    #embroidered__image{
+      min-width: 37.1%;
+      z-index: 3;
+      bottom: 0;
+      position: absolute;
+    }
+    /* section two, slide 02/about us */
+    #slide__02{
+      background-image: url("../images/about_us.jpg");
+    }
+
+    #aboutus__person{
+      min-width: 35.6%;
+      z-index: 6;
+      right: 0;
+      position: absolute;
+    }
+
+    .intermedium__block_text--left .slide__text--block{
+      left:0;
+      position: absolute;
+    }
+    .intermedium__block_text--left .slide__paragraph{
+        margin-left: 10px;
+    }
+    
+    .intermedium__block_text--left .slide__title{
+      text-align: left;
+    }
+    /* section three, slide 03/Services */
+    #slide__03{
+      background-image: url("../images/pexels-cottonbro-studio-4778662.jpg");
+    }
+    /* section four, slide 04/Team */
+    #slide__04{
+      background-image: url("../images/pexels-pixabay-256455.jpg");
+    }
+
+  }
